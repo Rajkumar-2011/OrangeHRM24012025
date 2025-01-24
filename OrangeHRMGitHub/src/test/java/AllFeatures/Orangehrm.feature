@@ -30,6 +30,14 @@ Feature: OrangeHRM Application
     And user validate current URL
     And user click on pimlink
     
+    Scenario: validate Pim Functionality
+    Given user click on add Employee
+    When user enter "Dipti" firstname and "Jadhav" lastname
+    Then user click on save button
+    
+    
+    
+    
     
     
     
