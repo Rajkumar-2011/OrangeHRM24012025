@@ -1,5 +1,9 @@
 package StepDefinition;
 
-public class LoginPageStep {
+import BaseLayer.BaseClass;
+
+public class LoginPageStep extends BaseClass{
+	
+	
 
 }
