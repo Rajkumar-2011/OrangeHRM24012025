@@ -7,19 +7,20 @@ Feature: OrangeHRM Application
 
   #AfterHooks --Refresh page
   Scenario: validate loginpage functionlity by entering password
-    Given user enter "adminee11" password
+    Given user enter "212354" password
     And user click on login button
     Then user capture warning error message on username text box
 
   #AfterHooks --Refresh page
   Scenario: validate loginpage functionlity by entering invalid credentials
     Given user enter "Adminee" username
-    And user enter "adminee11" password
+    And user enter "212354" password
     And user click on login button
-    Then user capture invalid warning error message
-
-  #AfterHooks --Refresh page
+    Then user capture invalid warning error
+    
+    #AfterHooks --Refresh page
   Scenario: validate loginpage functionlity by entering valid credentials
     Given user enter "Admin" username
     And user enter "admin123" password
     And user click on login button
+    Then user capture invalid warning error
