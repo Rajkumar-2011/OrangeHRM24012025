@@ -46,18 +46,18 @@ public class LoginPage extends BaseClass {
 		loginButton.click();
 	}
 	
-	public void passwordWarningFunctionality()
+	public String  passwordWarningFunctionality()
 	{
-		passwordwarning.getText();
+		return passwordwarning.getText();
 	}
 	
-	public void usernameWarningFunctionality()
+	public String usernameWarningFunctionality()
 	{
-		usernamewarning.getText();
+		return usernamewarning.getText();
 	}
 
-	public void invalidCredentialsFunctionality()
+	public String invalidCredentialsWarningFunctionality()
 	{
-		invalidcredentials.getText();
+		return invalidcredentials.getText();
 	}
 }
