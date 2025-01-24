@@ -23,4 +23,17 @@ Feature: OrangeHRM Application
     Given user enter "Admin" username
     And user enter "admin123" password
     And user click on login button
-    Then user capture invalid warning error
+    
+    Scenario: validate HomePage Functionality
+    Given user validate logo
+    And user validate Title
+    And user validate current URL
+    And user click on pimlink
+    
+    
+    
+    
+    
+ 
+    
+    
